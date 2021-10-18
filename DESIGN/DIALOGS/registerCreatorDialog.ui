@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>registerCreatorDialog</class>
+ <widget class="QDialog" name="registerCreatorDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>285</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="registertabWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>501</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="categoryTab1">
+    <attribute name="title">
+     <string>Somme en Caisse</string>
+    </attribute>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Somme Actuelle en Caisse (DA)</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="subCategoryGroupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>39</y>
+       <width>451</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Détails sur la somme</string>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Somme initiale en caisse </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Recette du jour</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>70</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tot.Dépots</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>40</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tot.Depenses</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="sumDay">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>70</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:green</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="sumDep">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>40</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:red</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="sumAdd">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>70</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:green</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sumInit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>40</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-right:none</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>70</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:green</string>
+      </property>
+      <property name="text">
+       <string>DA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>40</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:red</string>
+      </property>
+      <property name="text">
+       <string>DA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:green</string>
+      </property>
+      <property name="text">
+       <string>DA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>40</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:white;border:1px solid;</string>
+      </property>
+      <property name="text">
+       <string>DA</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLCDNumber" name="sumTotal">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>10</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Somme Actuelle en caisse</string>
+     </property>
+     <property name="statusTip">
+      <string>Somme Actuelle en caisse</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLCDNumber { color: #00ea00; background-color: black; border: 1px solid black  ; height:35px;text-align:center;}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="smallDecimalPoint">
+      <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>9</number>
+     </property>
+     <property name="mode">
+      <enum>QLCDNumber::Dec</enum>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="value" stdset="0">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="totalButton">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>20</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <italic>true</italic>
+       <bold>true</bold>
+       <underline>false</underline>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Calculer la somme totale actuelle  en caisse&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="statusTip">
+      <string>Validation et Impression de la commande...</string>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:white;text-align:left; color : black; border: 0px solid #000028  ;  height:35px;text-align:center;}
+QPushButton:hover{color:green}</string>
+     </property>
+     <property name="text">
+      <string>Calculer</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/ValidationButton/confirm.png</normaloff>../../IMAGES/ValidationButton/confirm.png</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="categoryTab2">
+    <attribute name="title">
+     <string>Depences</string>
+    </attribute>
+    <widget class="QGroupBox" name="subCategoryGroupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>39</y>
+       <width>451</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Détails sur la Dépense</string>
+     </property>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Type de depense</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Description</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="depDesc">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>271</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Somme à dépenser (DA)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="depVal">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="depAdd">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>80</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>Enregistrer les modification  &quot;ENTRER&quot;</string>
+      </property>
+      <property name="statusTip">
+       <string>Enregistrer les modification  &quot;ENTRER&quot;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{  border:0px;}
+QPushButton:hover{color:green;}
+QPushButton:focus{color:green;}</string>
+      </property>
+      <property name="text">
+       <string>Ajouter</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/EditImages/database (1).png</normaloff>../../IMAGES/EditImages/database (1).png</iconset>
+      </property>
+      <property name="shortcut">
+       <string>Return</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="depTypeCmbBox">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="currentText">
+       <string>Achat</string>
+      </property>
+      <property name="maxVisibleItems">
+       <number>11</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Achat</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Salaire</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Avance</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Emprunt</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Credit</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Autre</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="categoryTab3">
+    <attribute name="title">
+     <string>Dépots</string>
+    </attribute>
+    <widget class="QGroupBox" name="subCategoryGroupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>39</y>
+       <width>451</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Détails sur le depot d'argent</string>
+     </property>
+     <widget class="QLineEdit" name="addName">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Depositaire</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Somma à Déposer</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="addVal">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addAdd">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>80</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>Enregistrer les modification  &quot;ENTRER&quot;</string>
+      </property>
+      <property name="statusTip">
+       <string>Enregistrer les modification  &quot;ENTRER&quot;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{  border:0px;}
+QPushButton:hover{color:green;}
+QPushButton:focus{color:green;}</string>
+      </property>
+      <property name="text">
+       <string>Ajouter</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/EditImages/database (1).png</normaloff>../../IMAGES/EditImages/database (1).png</iconset>
+      </property>
+      <property name="shortcut">
+       <string>Return</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="addDesc">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>271</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Description</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="registerAnnuler">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>250</y>
+     <width>51</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>Enregistrer les modification  &quot;ENTRER&quot;</string>
+   </property>
+   <property name="statusTip">
+    <string>Enregistrer les modification  &quot;ENTRER&quot;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{ background-color:white; border radius:0.3px;}</string>
+   </property>
+   <property name="text">
+    <string>Valider</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>0</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{color:#2f4f4f;border : 0px;text-align:center;}</string>
+   </property>
+   <property name="text">
+    <string>Gestion de Caisse</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../IMAGES/EditImages/drawing-tablet.png</normaloff>../../IMAGES/EditImages/drawing-tablet.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="registerPrint">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>250</y>
+     <width>51</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>Imprimer l'historique caisse du jour &quot;CTRL +P&quot;</string>
+   </property>
+   <property name="statusTip">
+    <string>Enregistrer les modification  &quot;ENTRER&quot;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{ background-color:white; border radius:0.3px;}</string>
+   </property>
+   <property name="text">
+    <string>Imp</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="editInit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>250</y>
+     <width>161</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>Enregistrer les modification  &quot;ENTRER&quot;</string>
+   </property>
+   <property name="statusTip">
+    <string>Enregistrer les modification  &quot;ENTRER&quot;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{  border:0px;}
+QPushButton:hover{color:green;}
+QPushButton:focus{color:green;}</string>
+   </property>
+   <property name="text">
+    <string>Editer Somme Initiale</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../IMAGES/EditImages/database (1).png</normaloff>../../IMAGES/EditImages/database (1).png</iconset>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
